@@ -28,17 +28,17 @@ jobs:
       - name: Install all dependecies
         run: npm install
       # Runs a set of commands using the runners shell
-      - name: Run the tests and generate coverage report
-        run: npm run coverage
+      # - name: Run the tests and generate coverage report
+      #   run: npm run coverage
      #Sending coverals report to codeclimate
-      - name: Sending coveralls report
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Sending coveralls report
+      #   uses: coverallsapp/github-action@master
+      #   with:
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
       #Codeclimate section
-      - name: Publish coverage to codeclimate
-        uses: paambaati/codeclimate-action@v3.0.0
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID}}
-        with:
-          coverageCommand: npm run coverage
+      # - name: Publish coverage to codeclimate
+      #   uses: paambaati/codeclimate-action@v3.0.0
+      #   env:
+      #     CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID}}
+      #   with:
+      #     coverageCommand: npm run coverage
