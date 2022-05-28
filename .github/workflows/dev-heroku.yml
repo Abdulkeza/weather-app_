@@ -16,7 +16,6 @@ jobs:
           node-version: '16.x'
       - name: Install all dependecies
         run: npm install
-
       # - name: Run the tests and generate coverage report
       #   run: npm run coverage
 
